@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs') %>
+        <div class="container">
+            <h2>New Zealand Members of Parliament</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Party</th>
+                </tr>
+
+                <% if (MPsData.length != 0) {var i=1; MPsData.forEach( function(data) {
+                    %>
+                    <tr>
+                        <td><%=data.id %></td>
+                        <td><%=data.name %></td>
+                        <td><%=data.party %></td>
+                    </tr>
+                    <% i++; }) %> <%}%> 
+            </table>
+        </div>
+    </body>
+</html>

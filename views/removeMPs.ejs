@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs') %>
+        <div class="container">
+            <h2>Remove an MP</h2>
+            <form method="post">
+                <label for="name">MP Name you want to remove: </label>
+                <input type="text" id="name" placeholder="Enter MP's name" name="name">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
